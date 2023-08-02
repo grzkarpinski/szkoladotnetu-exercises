@@ -1,0 +1,15 @@
+C:\dev\szkoladotnetu\zadania_petle\bin\Debug\net7.0\zadania_petle.exe
+C:\dev\szkoladotnetu\zadania_petle\bin\Debug\net7.0\zadania_petle.deps.json
+C:\dev\szkoladotnetu\zadania_petle\bin\Debug\net7.0\zadania_petle.runtimeconfig.json
+C:\dev\szkoladotnetu\zadania_petle\bin\Debug\net7.0\zadania_petle.dll
+C:\dev\szkoladotnetu\zadania_petle\bin\Debug\net7.0\zadania_petle.pdb
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.csproj.AssemblyReference.cache
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.AssemblyInfoInputs.cache
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.AssemblyInfo.cs
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.csproj.CoreCompileInputs.cache
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.dll
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\refint\zadania_petle.dll
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.pdb
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\zadania_petle.genruntimeconfig.cache
+C:\dev\szkoladotnetu\zadania_petle\obj\Debug\net7.0\ref\zadania_petle.dll

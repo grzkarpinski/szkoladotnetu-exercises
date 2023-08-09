@@ -29,10 +29,10 @@ Rezultat w terminalu :
 
 Console.WriteLine("Wpisz liczbę do sprawdzenia:");
 string numberInput = Console.ReadLine();
-int number_int;
-int.TryParse( numberInput, out number_int);
+int numberInt;
+int.TryParse( numberInput, out numberInt);
 
-if (number_int % 2 == 0) 
+if (numberInt % 2 == 0) 
 {
     Console.WriteLine("Ta liczba jest parzysta!");
 }
@@ -49,14 +49,14 @@ Rezultat w terminalu :
 
 Console.WriteLine("Wpisz liczbę do sprawdzenia czy jest dodatnia:");
 string numberInput1 = Console.ReadLine();
-int number_int1;
-int.TryParse(numberInput1, out number_int1);
+int numberInt1;
+int.TryParse(numberInput1, out numberInt1);
 
-if (number_int1 > 0) 
+if (numberInt1 > 0) 
 {
     Console.WriteLine("Ta liczba jest większa od 0!");
 }
-else if (number_int1 < 0)
+else if (numberInt1 < 0)
 {
     Console.WriteLine("Ta liczba jest mniejsza od 0!");
 }
@@ -99,17 +99,21 @@ int.TryParse(ageInput, out ageInt);
 
 switch (ageInt) 
 {
-    case >= 35: Console.WriteLine("Możesz zostać posłem, premierem, senatorem i nawet prezydentem");
-    break;
+    case >= 35:
+        Console.WriteLine("Możesz zostać posłem, premierem, senatorem i nawet prezydentem");
+        break;
 
-    case >= 30 : Console.WriteLine("Możesz zostać posłem, premierem lub senatorem");
-    break;
+    case >= 30 :
+        Console.WriteLine("Możesz zostać posłem, premierem lub senatorem");
+        break;
 
-    case >= 21: Console.WriteLine("Możesz zostać posłem lub premierem");
-    break;
+    case >= 21:
+        Console.WriteLine("Możesz zostać posłem lub premierem");
+        break;
 
-    default: Console.WriteLine("Nie masz biernego prawa wyborczego...");
-    break;
+    default:
+        Console.WriteLine("Nie masz biernego prawa wyborczego...");
+        break;
 }
 
 /* Napisz program w C#, który pobierze wzrost użytkownika i przypisze mu
@@ -218,13 +222,13 @@ Temp 30 – 40 – zaczyna być słabo, bo gorącoTemp >= 40 – a weź wyprowad
 Console.WriteLine("Jaka jest temperatura?:");
 string tempInput = Console.ReadLine();
 int temp;
-int.TryParse(highInput, out temp);
+int.TryParse(tempInput, out temp);
 
 if (temp < 0)
 {
     Console.WriteLine("Cholernie piździ");
 }
-else if (0 > temp && temp <= 10)
+else if (0 <= temp && temp <= 10)
 {
     Console.WriteLine("zimno");
 }
@@ -255,7 +259,7 @@ int bokA = 40;
 int bokB = 55;
 int bokC = 65;
 
-if (bokA + bokB > bokC || bokA + bokC > bokB || bokB + bokC > bokA)
+if (bokA + bokB > bokC && bokA + bokC > bokB && bokB + bokC > bokA)
 {
     Console.WriteLine("Można zbudować trójkąt");
 }
@@ -308,26 +312,37 @@ Console.WriteLine("Jaki jest dzień tygodnia? (numer)");
 string day  = Console.ReadLine();
 switch (day) 
 {
-    case "1": Console.WriteLine("Poniedziałek");
-    break;
+    case "1": 
+        Console.WriteLine("Poniedziałek");
+        break;
 
-    case "2": Console.WriteLine("Wtorek");
-    break;
+    case "2": 
+        Console.WriteLine("Wtorek");
+        break;
 
-    case "3": Console.WriteLine("Środa");
-    break;
+    case "3":
+        Console.WriteLine("Środa");
+        break;
 
-    case "4": Console.WriteLine("Czwartek");
-    break;
+    case "4": 
+        Console.WriteLine("Czwartek");
+        break;
 
-    case "5": Console.WriteLine("Piątek");
-    break;
+    case "5": 
+        Console.WriteLine("Piątek");
+        break;
 
-    case "6": Console.WriteLine("Sobota");
-    break;
+    case "6": 
+        Console.WriteLine("Sobota");
+        break;
 
-    case "7": Console.WriteLine("Niedziela");
-    break;
+    case "7": 
+        Console.WriteLine("Niedziela");
+        break;
+
+    default : 
+        Console.WriteLine("Nie ma takiego dnia tygodnia");
+        break;
 }
 
 /* Napisz program, który będzie posiadał proste menu (wg. Wzoru poniżej) I
@@ -354,28 +369,37 @@ string operation  = Console.ReadLine();
 
 Console.WriteLine("Wpisz pierwszą liczbę:");
 string number1 =  Console.ReadLine();
-double number1_int;
-Double.TryParse(number1, out number1_int);
+double number1Int;
+Double.TryParse(number1, out number1Int);
 
 Console.WriteLine("Wpisz drugą liczbę:");
 string number2 = Console.ReadLine();
-double number2_int;
-Double.TryParse(number2, out number2_int);
+double number2Int;
+Double.TryParse(number2, out number2Int);
 
 double output;
 switch (operation) 
 {
     case "1":
-        output = number1_int + number2_int;
+        output = number1Int + number2Int;
         break;
     case "2":
-        output = number1_int - number2_int;
+        output = number1Int - number2Int;
         break;
     case "3":
-        output = number1_int * number2_int;
+        output = number1Int * number2Int;
         break;
     case "4":
-        output = number1_int / number2_int;
+        if (number2Int == 0)
+        {
+            Console.WriteLine("Pamiętaj cholero, nigdy nie dziel przez 0!");
+            output = 0;
+            break;
+        }
+        else
+        {
+            output = number1Int / number2Int;
+        }
         break;
     default:
         output = 0;

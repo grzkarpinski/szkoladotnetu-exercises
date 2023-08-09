@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\szkoladotnetu\\zadania_warunki\\zadania_warunki.csproj": {}
+    "C:\\dev\\szkoladotnetu\\szkoladotnetu-exercises\\week2\\zadania_warunki\\zadania_warunki.csproj": {}
   },
   "projects": {
-    "C:\\dev\\szkoladotnetu\\zadania_warunki\\zadania_warunki.csproj": {
+    "C:\\dev\\szkoladotnetu\\szkoladotnetu-exercises\\week2\\zadania_warunki\\zadania_warunki.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\szkoladotnetu\\zadania_warunki\\zadania_warunki.csproj",
+        "projectUniqueName": "C:\\dev\\szkoladotnetu\\szkoladotnetu-exercises\\week2\\zadania_warunki\\zadania_warunki.csproj",
         "projectName": "zadania_warunki",
-        "projectPath": "C:\\dev\\szkoladotnetu\\zadania_warunki\\zadania_warunki.csproj",
+        "projectPath": "C:\\dev\\szkoladotnetu\\szkoladotnetu-exercises\\week2\\zadania_warunki\\zadania_warunki.csproj",
         "packagesPath": "C:\\Users\\gkarp\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\szkoladotnetu\\zadania_warunki\\obj\\",
+        "outputPath": "C:\\dev\\szkoladotnetu\\szkoladotnetu-exercises\\week2\\zadania_warunki\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -57,25 +57,25 @@ liczby w formie jak poniżej:
 7 8 9 10 */
 
 Console.WriteLine("\n\nPodaj liczbę do wygenerowania piramidy:");
-string pyramid_number = Console.ReadLine();
-int pyramid_number_int;
-Int32.TryParse(pyramid_number, out pyramid_number_int);
+string pyramidNumber = Console.ReadLine();
+int pyramidNumberInt;
+Int32.TryParse(pyramidNumber, out pyramidNumberInt);
 Console.WriteLine();
 
-int pyr_number = 1;
+int pyrNumber = 1;
 int counter = 1;
-while (counter <= pyramid_number_int) 
+while (counter <= pyramidNumberInt) 
 {
-    for (int i = 1; i <= pyr_number; i++) 
+    for (int i = 1; i <= pyrNumber; i++) 
     {
-        if (counter <= pyramid_number_int) 
+        if (counter <= pyramidNumberInt) 
         {
             Console.Write($"{counter} ");
             counter++;
         }
     }
     Console.WriteLine();
-    pyr_number++;
+    pyrNumber++;
 }
 
 // Napisz program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
@@ -116,52 +116,56 @@ przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:
     * 
 */
 
-Console.WriteLine("Ile pięter diamentu: ");
+Console.WriteLine("Podaj długość krótszej przekątnej diamentu (liczba nieparzysta!): ");
 string diamond = Console.ReadLine();
-int diamond_num;
-Int32.TryParse((diamond), out diamond_num);
+int diamondNum;
+Int32.TryParse(diamond, out diamondNum);
 
-int astrix_num = 1;
-int max_astrix = diamond_num * 2 - 1;
-
-for (int i = 1; i <= diamond_num; i++) 
+if (diamondNum % 2 == 1 && diamondNum > 0)
 {
-    int space_num = (max_astrix - astrix_num) / 2;
-    for (int j = 1; j <= space_num; j++) 
+    for (int i = 1; i <= diamondNum; i += 2)
     {
-        Console.Write(" ");
+        int stars = i;
+        int spaces = (diamondNum - i) / 2;
+
+        for (int j = 0; j < spaces; j++)
+        {
+            Console.Write(" ");
+        }
+        for (int k = 0; k < stars; k++)
+        {
+            Console.Write("*");
+        }
+        for (int l = 0; l < spaces; l++)
+        {
+            Console.Write(" ");
+        }
+        Console.WriteLine();
     }
-    for (int k = 1; k <= astrix_num; k++) 
+
+    for (int i = diamondNum - 2; i >= 1; i -= 2)
     {
-        Console.Write("*");
+        int spaces = (diamondNum - i) / 2;
+        int stars = i;
+
+        for (int j = 0; j < spaces; j++)
+        {
+            Console.Write(" ");
+        }
+        for (int k = 0; k < stars; k++)
+        {
+            Console.Write("*");
+        }
+        for (int l = 0; l < spaces; l++)
+        {
+            Console.Write(" ");
+        }
+        Console.WriteLine();
     }
-    for (int j = 1; j <= space_num; j++)
-    {
-        Console.Write(" ");
-    }
-    Console.WriteLine();
-    astrix_num += 2;
 }
-// zmniejszanie diamentu
-astrix_num -= 2;
-
-for (int i = 1; i <= diamond_num; i++)
+else
 {
-    astrix_num -= 2;
-    int space_num = (max_astrix - astrix_num) / 2;
-    for (int j = 1; j <= space_num; j++)
-    {
-        Console.Write(" ");
-    }
-    for (int k = 1; k <= astrix_num; k++)
-    {
-        Console.Write("*");
-    }
-    for (int j = 1; j <= space_num; j++)
-    {
-        Console.Write(" ");
-    }
-    Console.WriteLine();
+    Console.WriteLine("Podana liczba jest nieprawidłowa!");
 }
 
 /* Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków. Np.
@@ -174,57 +178,57 @@ Gfedcba
 Console.Write("Wpisz słowo do odwrócenia: ");
 string word =  Console.ReadLine();
 
-string reversed_word = "";
+string reversedWord = "";
 for (int letter = word.Length - 1; letter >= 0; letter--) 
 {
-    reversed_word += word[letter];
+    reversedWord += word[letter];
 }
-Console.WriteLine($"Twoje odwrócone słowo to: {reversed_word}");
+Console.WriteLine($"Twoje odwrócone słowo to: {reversedWord}");
 
 // Napisz program, który zamieni liczbę dziesiętną na liczbę binarną
 
 Console.Write("Wpisz liczbę do przeliczenia na system dwójkowy: ");
-string decimal_num = Console.ReadLine();
-int decimal_num_int;
-Int32.TryParse(decimal_num, out decimal_num_int);
+string decimalNum = Console.ReadLine();
+int decimalNumInt;
+Int32.TryParse(decimalNum, out decimalNumInt);
 
 
-string num_string_rev = "";
-while  (decimal_num_int > 0) 
+string numStringRev = "";
+while  (decimalNumInt > 0) 
 {
-    int num_rest = decimal_num_int % 2;
-    num_string_rev += num_rest;
-    decimal_num_int /= 2;
+    int numRest = decimalNumInt % 2;
+    numStringRev += numRest;
+    decimalNumInt /= 2;
 }
 
 // odwrócenie stringa
 
-string decimal_number = "";
-for (int letter = num_string_rev.Length - 1; letter >= 0; letter--)
+string decimalNumber = "";
+for (int letter = numStringRev.Length - 1; letter >= 0; letter--)
 {
-    decimal_number += num_string_rev[letter];
+    decimalNumber += numStringRev[letter];
 }
-Console.WriteLine($"W postaci binarnej to: {decimal_number}");
+Console.WriteLine($"W postaci binarnej to: {decimalNumber}");
 
 
 // Napisz program, który znajdzie najmniejszą wspólną wielokrotność dla zadanych 2 liczb
 
 Console.Write("Liczymy najmniejszą wspólną wielokrotność. Wpisz 1 licznę: ");
-string number_one = Console.ReadLine();
-int number_one_int;
-Int32.TryParse(number_one,out number_one_int);
+string numberOne = Console.ReadLine();
+int numberOneInt;
+Int32.TryParse(numberOne,out numberOneInt);
 
 Console.Write("Wpisz 2 licznę: ");
-string number_two = Console.ReadLine();
-int number_two_int;
-Int32.TryParse(number_two, out number_two_int);
+string numberTwo = Console.ReadLine();
+int numberTwoInt;
+Int32.TryParse(numberTwo, out numberTwoInt);
 
 // 1. największy wspólny dzielink
 int nwd = 1;
 
-for (int i=2; i < number_one_int; i++) 
+for (int i=2; i < numberOneInt; i++) 
 {
-    if (number_one_int % i == 0 && number_two_int % i == 0) 
+    if (numberOneInt % i == 0 && numberTwoInt % i == 0) 
     {
         nwd = i;
     }
@@ -232,6 +236,6 @@ for (int i=2; i < number_one_int; i++)
 
 // 2. nww
 
-int nww = number_one_int * number_two_int / nwd;
+int nww = numberOneInt * numberTwoInt / nwd;
 
-Console.WriteLine($"Najmniejsza wspólna wielokrotność {number_one_int} i {number_two_int} to {nww}");
+Console.WriteLine($"Najmniejsza wspólna wielokrotność {numberOneInt} i {numberTwoInt} to {nww}");

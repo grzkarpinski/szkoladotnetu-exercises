@@ -232,15 +232,15 @@ else if (0 <= temp && temp <= 10)
 {
     Console.WriteLine("zimno");
 }
-else if (10 > temp && temp <= 20)
+else if (10 < temp && temp <= 20)
 {
     Console.WriteLine("chłodno");
 }
-else if (20 > temp && temp <= 30)
+else if (20 < temp && temp <= 30)
 {
     Console.WriteLine("W sam raz");
 }
-else if (30 > temp && temp <= 40)
+else if (30 < temp && temp <= 40)
 {
     Console.WriteLine("zaczyna być słabo, bo gorąco");
 }

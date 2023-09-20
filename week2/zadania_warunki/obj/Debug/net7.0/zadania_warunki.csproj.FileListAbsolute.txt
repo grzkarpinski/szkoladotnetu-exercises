@@ -18,7 +18,6 @@ C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\bin\Debug\net
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\bin\Debug\net7.0\zadania_warunki.runtimeconfig.json
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\bin\Debug\net7.0\zadania_warunki.dll
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\bin\Debug\net7.0\zadania_warunki.pdb
-C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\obj\Debug\net7.0\zadania_warunki.csproj.AssemblyReference.cache
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\obj\Debug\net7.0\zadania_warunki.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\obj\Debug\net7.0\zadania_warunki.AssemblyInfoInputs.cache
 C:\dev\szkoladotnetu\szkoladotnetu-exercises\week2\zadania_warunki\obj\Debug\net7.0\zadania_warunki.AssemblyInfo.cs
